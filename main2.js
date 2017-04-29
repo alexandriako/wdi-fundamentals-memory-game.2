@@ -24,12 +24,14 @@ var cardsInPlay = [];
 
 var checkForMatch = function () {
 	if (cardsInPlay.length === 2) {
-	if (cardsInPlay[0] === cardsInPlay[1]) {
+	if (cardsInPlay[0] === cardsInPlay[1]){
       alert("You found a match!");
 	} else {
       alert("Sorry, try again.");
+      location.reload();
 	}
 }};
+
 
 var flipCard = function () {
 	var cardId = this.getAttribute('data-id');
